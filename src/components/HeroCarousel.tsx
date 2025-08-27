@@ -84,14 +84,13 @@ const HeroCarousel = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+          className={`absolute inset-0 transition-all duration-1000 ease-in-out parallax-bg ${
             index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
           }`}
           style={{
             backgroundImage: `url(${slide.image})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed'
+            backgroundPosition: 'center'
           }}
         >
           <div className="absolute inset-0 bg-black/70"></div>

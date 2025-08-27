@@ -96,12 +96,11 @@ const RestaurantDivision = () => {
       
       {/* Hero Section */}
       <section 
-        className="relative pt-20 pb-16 overflow-hidden"
+        className="relative pt-20 pb-16 overflow-hidden parallax-bg"
         style={{
           backgroundImage: `url(${restaurantImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          backgroundPosition: 'center'
         }}
       >
         <div className="absolute inset-0 bg-gradient-overlay"></div>
