@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Kinness Foods Design System - Professional corporate theme with navy blue and gold accents */
+
+@layer base {
+  :root {
+    /* Core brand colors - warm bakery theme */
+    --background: 30 20% 98%;
+    --foreground: 30 40% 15%;
+
+    /* Card system with warm elegance */
+    --card: 0 0% 100%;
+    --card-foreground: 30 40% 15%;
+
+    /* Popover elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 40% 15%;
+
+    /* Primary brand - warm orange */
+    --primary: 25 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 25 85% 60%;
+
+    /* Secondary - rich brown */
+    --secondary: 30 40% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted tones */
+    --muted: 30 20% 94%;
+    --muted-foreground: 30 20% 45%;
+
+    /* Accent - golden highlight */
+    --accent: 35 90% 55%;
+    --accent-foreground: 30 40% 15%;
+    --accent-light: 35 75% 85%;
+
+    /* Warm highlight - golden orange */
+    --warm: 35 90% 55%;
+    --warm-foreground: 30 40% 15%;
+
+    /* Status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 140 70% 40%;
+    --success-foreground: 0 0% 98%;
+
+    /* UI elements */
+    --border: 30 25% 88%;
+    --input: 30 25% 92%;
+    --ring: 25 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients for bakery theme */
+    --gradient-hero: linear-gradient(135deg, hsl(25, 85%, 45%) 0%, hsl(35, 90%, 55%) 100%);
+    --gradient-warm: linear-gradient(90deg, hsl(35, 90%, 55%) 0%, hsl(25, 85%, 45%) 100%);
+    --gradient-overlay: linear-gradient(135deg, hsl(30, 40%, 15% / 0.8) 0%, hsl(30, 40%, 10% / 0.9) 100%);
+    
+    /* Warm shadows with orange theme */
+    --shadow-elegant: 0 10px 40px -15px hsl(25, 85%, 45% / 0.25);
+    --shadow-warm: 0 8px 32px -8px hsl(35, 90%, 55% / 0.3);
+    --shadow-soft: 0 4px 24px -6px hsl(30, 40%, 15% / 0.12);
+
+    /* Animation timing */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 40% 8%;
+    --foreground: 30 20% 95%;
+
+    --card: 30 40% 12%;
+    --card-foreground: 30 20% 95%;
+
+    --popover: 30 40% 12%;
+    --popover-foreground: 30 20% 95%;
+
+    --primary: 25 85% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 40% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 30% 18%;
+    --muted-foreground: 30 20% 65%;
+
+    --accent: 35 90% 60%;
+    --accent-foreground: 30 40% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 30 30% 18%;
+    --input: 30 30% 18%;
+    --ring: 25 85% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Animation classes for food industry website */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-up {
+    animation: slideInUp 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Hero text effects */
+  .text-gradient {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Hover effects for cards */
+  .card-hover {
+    transition: var(--transition-smooth);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-elegant);
+  }
+
+  /* Custom button variants */
+  .btn-hero {
+    background: var(--gradient-hero);
+    color: hsl(var(--primary-foreground));
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-warm);
+  }
+
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .btn-outline-warm {
+    border: 2px solid hsl(var(--primary));
+    color: hsl(var(--primary));
+    background: transparent;
+    transition: var(--transition-smooth);
+  }
+
+  .btn-outline-warm:hover {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    transform: translateY(-2px);
+  }
+
+  /* Section transitions */
+  .section-enter {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .section-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: var(--transition-smooth);
+  }
+
+  /* Parallax background */
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
