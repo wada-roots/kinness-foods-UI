@@ -64,8 +64,7 @@ const Contact = () => {
       icon: Phone,
       title: 'Call Us',
       details: [
-        '+234 (0) 123 456 7890',
-        '+234 (0) 123 456 7891',
+        '+254721463457',
         'Mon - Fri: 8:00 AM - 6:00 PM'
       ]
     },
@@ -73,9 +72,9 @@ const Contact = () => {
       icon: Mail,
       title: 'Email Us',
       details: [
-        'info@kinnessfoods.com',
-        'sales@kinnessfoods.com',
-        'support@kinnessfoods.com'
+        'info@kinnessfoods.co.ke',
+        'sales@kinnessfoods.co.ke',
+        'support@kinnessfoods.co.ke'
       ]
     },
     {
@@ -214,7 +213,7 @@ const Contact = () => {
                           type="tel"
                           value={formData.phone}
                           onChange={handleChange}
-                          placeholder="+234 (0) 123 456 7890"
+                          placeholder="+254721463457"
                           className="w-full"
                         />
                       </div>
@@ -301,11 +300,11 @@ const Contact = () => {
                   <div className="space-y-3">
                     <div className="flex items-center">
                       <Phone className="w-5 h-5 mr-3" />
-                      <span>+234 (0) 123 456 7890</span>
+                      <span>+254721463457</span>
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 mr-3" />
-                      <span>info@kinnessfoods.com</span>
+                      <span>info@kinnessfoods.co.ke</span>
                     </div>
                   </div>
                 </CardContent>
