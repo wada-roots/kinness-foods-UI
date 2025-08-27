@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import factoryImage from '@/assets/factory-division.jpg';
+import foodProcessingImage from '@/assets/services/food-processing.jpg';
+import productDevelopmentImage from '@/assets/services/product-development.jpg';
 
 const FactoryDivision = () => {
   useEffect(() => {
@@ -34,25 +36,25 @@ const FactoryDivision = () => {
       title: 'Large-Scale Food Processing',
       description: 'Industrial-grade food processing with state-of-the-art equipment and technology.',
       features: ['Automated Production Lines', 'Batch Processing', 'Continuous Processing', 'Custom Formulations'],
-      image: '/src/assets/services/food-processing.jpg'
+      image: foodProcessingImage
     },
     {
       title: 'Product Development & R&D',
       description: 'Innovation-driven research and development for new food products and processes.',
       features: ['Recipe Development', 'Nutritional Analysis', 'Shelf-Life Testing', 'Market Research'],
-      image: '/src/assets/services/product-development.jpg'
+      image: productDevelopmentImage
     },
     {
       title: 'Quality Control Systems',
       description: 'Comprehensive quality assurance programs ensuring product safety and consistency.',
       features: ['HACCP Implementation', 'ISO Standards', 'Lab Testing', 'Traceability Systems'],
-      image: '/src/assets/services/food-processing.jpg'
+      image: foodProcessingImage
     },
     {
       title: 'Technology Innovation',
       description: 'Complete packaging solutions and distribution network management.',
       features: ['Custom Packaging Design', 'Automated Packaging', 'Logistics Management', 'Cold Chain Solutions'],
-      image: '/src/assets/services/product-development.jpg'
+      image: productDevelopmentImage
     }
   ];
 

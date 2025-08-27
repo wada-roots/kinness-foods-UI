@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import jungleBg1 from '@/assets/backgrounds/jungle-bg-1.jpg';
 import bakeryImage from '@/assets/bakery-division.jpg';
 import restaurantImage from '@/assets/restaurant-division.jpg';
 import factoryImage from '@/assets/factory-division.jpg';
@@ -103,7 +104,7 @@ const Divisions = () => {
       <section 
         className="relative pt-20 pb-16 overflow-hidden parallax-bg"
         style={{
-          backgroundImage: 'url(/src/assets/backgrounds/jungle-bg-1.jpg)',
+          backgroundImage: `url(${jungleBg1})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}

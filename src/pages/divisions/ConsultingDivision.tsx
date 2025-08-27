@@ -7,6 +7,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import consultingImage from '@/assets/consulting-division.jpg';
+import businessStrategyImage from '@/assets/services/business-strategy.jpg';
+import msmeSupportImage from '@/assets/services/msme-support.jpg';
 
 const ConsultingDivision = () => {
   useEffect(() => {
@@ -34,25 +36,25 @@ const ConsultingDivision = () => {
       title: 'Business Strategy Development',
       description: 'Comprehensive strategic planning and business development consulting for food industry enterprises.',
       features: ['Market Analysis & Research', 'Business Plan Development', 'Competitive Strategy', 'Growth Planning'],
-      image: '/src/assets/services/business-strategy.jpg'
+      image: businessStrategyImage
     },
     {
       title: 'MSME Support Programs',
       description: 'Specialized support and guidance for Micro, Small, and Medium Enterprises in the food sector.',
       features: ['Startup Guidance', 'Funding Assistance', 'Mentorship Programs', 'Skills Development'],
-      image: '/src/assets/services/msme-support.jpg'
+      image: msmeSupportImage
     },
     {
       title: 'Market Research & Analysis',
       description: 'Process improvement and operational efficiency consulting to maximize productivity and reduce costs.',
       features: ['Process Mapping', 'Efficiency Analysis', 'Cost Reduction', 'Quality Improvement'],
-      image: '/src/assets/services/business-strategy.jpg'
+      image: businessStrategyImage
     },
     {
       title: 'Financial Planning',
       description: 'Financial strategy and planning services to ensure sustainable business growth and profitability.',
       features: ['Financial Modeling', 'Investment Planning', 'Risk Assessment', 'Performance Metrics'],
-      image: '/src/assets/services/msme-support.jpg'
+      image: msmeSupportImage
     }
   ];
 

@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import jungleBg2 from '@/assets/backgrounds/jungle-bg-2.jpg';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -105,7 +106,7 @@ const Contact = () => {
       <section 
         className="relative pt-20 pb-16 overflow-hidden parallax-bg"
         style={{
-          backgroundImage: 'url(/src/assets/backgrounds/jungle-bg-2.jpg)',
+          backgroundImage: `url(${jungleBg2})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
